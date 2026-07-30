@@ -1,0 +1,11 @@
+<HTML>
+<HEAD>
+<TITLE>SAMPLE HTML PAGE </TITLE>
+</HEAD>
+<BODY>
+<h1><b><u>LOGIN PAGE</u></b></h1><\hr>
+<label>EMAIL:</label><input type="Name" />
+<label>Password:</label><input type="PASSWORD/>
+<input type="submit" 
+</BODY>
+<\HTML>

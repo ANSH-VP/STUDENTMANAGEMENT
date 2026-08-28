@@ -1,5 +1,3 @@
-<script>
-    function fun(){
+function fun(){
         document.getElementById('demo').innerHTML = 'Hello, ANSH!'
-    }
-</script>
+}

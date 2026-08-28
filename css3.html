@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Shopping Website</title>
 <style>
-    .banner {
+   .banner {
     width: 100%;
     height: 600px;
     overflow: hidden;
@@ -28,7 +28,7 @@
     width: 20%;
     height: 100%;
     object-fit: cover;
-    flex-shrink: 0;
+    flex-shrink: 0;  
 }
 
         @keyframes slide {
@@ -49,81 +49,83 @@
 
 <body style="background-color:#E8C0C5;">
 
-<table border="4" width="100%" cellpadding="10" cellspacing="0" style="border-color:#E8C0C5;">
-    <tr style="background-color:#E8C0C5;">
-        <td width="20%" align="center">
-            <img src="Pictures/image.png" width="200" height="100" alt="Logo">
-        </td>
-        <td width="50%" align="center">
-            <input type="text" size="35" placeholder="Enter your name" style="height:30px;">
+<section style="border:4px solid #804249; width:100%; "> 
+    <div style="background-color:#E8C0C5; padding:10px;"> 
+        <div style="width:20%; display:inline-block; text-align:center; position:relative ; bottom:-10px;"> 
+            <img src="Pictures/image.png" width="200" height="100"> 
+        </div> 
+        <div style="width:50%; display:inline-block; text-align:center; position:relative; top:-30px;"> 
+            <input type="text" size="35" placeholder="Enter your name" style="height:30px;"> 
             <input type="button" value="Search" style="height:35px; width:80px;">
-        </td>
-        <td width="30%" align="center">
-            <b style="color:black;">
-                <a href="aboutme.html">ABOUT US</a> | LOGIN | REGISTER | CART(0)
-            </b>
-        </td>
-    </tr>
-</table>
+        </div> 
 
-<table border="4" width="100%" cellpadding="10" cellspacing="0" style="border-color:#E8C0C5; background-color:#E8C0C5;">
-    <tr>
-        <td><b>FASHION</b></td>
-        <td><b>BEAUTY</b></td>
-        <td><b>ACCESSORIES</b></td>
-        <td><b>ELECTRONICS</b></td>
-        <td><b>GROCERIES</b></td>
-        <td><b>CLOTHES</b></td>
-    </tr>
-</table>
+        <div style="width:25%; display:inline-block; text-align:center; position:relative; top:-30px;"> 
+            <b style="color:black;"> 
+                <a href="aboutme.html">ABOUT US</a> | 
+                LOGIN | 
+                REGISTER | 
+                CART(0) 
+            </b> 
+        </div> 
+    </div> 
 
-<section class="banner">
+</section>
+
+
+<section style="border:2px solid #804249; background-color:#E8C0C5; padding:10px;">
+    <div style="display:inline-block; width:15%;"><b>FASHION</b></div>
+    <div style="display:inline-block; width:15%;"><b>BEAUTY</b></div>
+    <div style="display:inline-block; width:18%;"><b>ACCESSORIES</b></div>
+    <div style="display:inline-block; width:18%;"><b>ELECTRONICS</b></div>
+    <div style="display:inline-block; width:15%;"><b>GROCERIES</b></div>
+    <div style="display:inline-block; width:15%;"><b>CLOTHES</b></div>
+</section>
+
+<section class="banner" style="border:4px solid #804249;">
     <div class="slider">
         <div class="dlifer">
-            <img src="Pictures/image6.png" alt="Image 1">
-            <img src="Pictures/image2.png" alt="Image 2">
-            <img src="Pictures/image3.png" alt="Image 3">
-            <img src="Pictures/image4.png" alt="Image 4">
-            <img src="Pictures/image5.png" alt="Image 5">
+            <img src="Pictures/image6.png" alt="Image 2">
+            <img src="Pictures/image2.png" alt="Image 3">
+            <img src="Pictures/image3.png" alt="Image 4">
+            <img src="Pictures/image4.png" alt="Image 5">
+            <img src="Pictures/image5.png" alt="Image 6">
         </div>
     </div>
 </section>
 
-<table border="4" width="100%" cellpadding="10" cellspacing="0" style="border-color:#E8C0C5; background-color:#E8C0C5;">
-    <tr>
-        <td style="background-color:#E8C0C5;">
-            <center><b>FEATURED PRODUCTS</b></center>
-        </td>
-    </tr>
-    <tr>
-            <TABLE BORDER="4" WIDTH="100%" CELLPADDING="10" CELLSPACING="0" STYLE="BORDER-COLOR:#E8C0C5; BACKGROUND-COLOR:#E8C0C5;">
-                <tr>
-                   <TD><center><IMG src="Pictures/image3.png" width="70%" height="25%"><BR><b>COTTON SHIRT<BR>$500</center></b></TD>
-                    <TD><center><IMG src="Pictures/image4.png" width="70%" height="25%"><BR><b>JEANS<BR>$800</center></b></TD>
-                    <TD><center><IMG src="Pictures/image5.png" width="70%" height="25%"><BR><b>SNEAKERS<BR>$1200</center></b></TD>
-                    <TD><center><IMG src="Pictures/image6.png" width="70%" height="25%"><BR><b>IPHONE<BR>$1000</center></b></TD>
-                </tr>
-            </TABLE>
-        </tr>
-        <TR >
-            <table border="4" width="100%" cellpadding="10" cellspacing="0" style="border-color:#9b4852; background-color:#9b555d;">
-                <tr>
-                    <td>
-                    <center><b><h2>Today's Special Offers</h2><br>
-                    Flat 20% Off on Fashion Products<br>
-                    Free Shipping on Orders Over $50<br>
-                    Extra cashback on Electronics</center></b><br><br></td>
-                </tr>   
-            </table>
-        </TR>
-        <tr>
-            <table border="4" width="100%" cellpadding="10" cellspacing="0" style="border-color:#E8C0C5; background-color:#E8C0C5;">
-                <tr>
-                    <center> <p> <B>© 2026 Amazon. All Rights Reserved. | Privacy Policy | Terms & Conditions | Contact Us</B></p></td></center>
-                    
-                </tr>
-        </tr>
-</table>
+<section style="border:4px solid #804249; background-color:#E8C0C5; padding:10px;">
+    <div style="text-align:center;"><b><h3>FEATURED PRODUCTS</h3></b></div><br><br><div>
+        <div style="display:inline-block; width:24%; text-align:center;">
+            <img src="Pictures/image3.png" width="70%" height="310"><br><b>COTTON SHIRT<br>$500</b></div>
+        <div style="display:inline-block; width:24%; text-align:center;">
+            <img src="Pictures/image4.png" width="60%" height="310"><br><b>JEANS<br>$800</b></div>
+        <div style="display:inline-block; width:24%; text-align:center;">
+            <img src="Pictures/image5.png" width="70%" height="310"><br><b>SNEAKERS<br>$1200</b></div>
+        <div style="display:inline-block; width:24%; text-align:center;">
+            <img src="Pictures/image6.png" width="70%" height="310"><br><b>IPHONE<br>$1000</b></div>
+    </div>
+</section>
 
+
+<section style="border:4px solid #9c414b; background-color:#9b555d; padding:20px; text-align:center;">
+    <b>
+        <h2>Today's Special Offers</h2>
+        Flat 20% Off on Fashion Products<br>
+        Free Shipping on Orders Over $50<br>
+        Extra cashback on Electronics<br>
+    </b>
+</section>
+
+
+<section style="border:4px solid #804249; background-color:#E8C0C5; padding:10px; text-align:center;">
+    <p>
+        <b>
+            © 2026 Amazon. All Rights Reserved.
+            | Privacy Policy
+            | Terms & Conditions
+            | Contact Us
+        </b>
+    </p>
+</section>
 </body>
 </html>

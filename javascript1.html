@@ -8,8 +8,11 @@
 <body>
     <script src="script1.js"></script>
     <h1>JavaScript Practice</h1>
+    <p></p>
     <p id="demo">Click the button to change this text.</p>
     <button onclick="fun()">Click Me!</button>
-    
+    <button onclick="document.getElementById('demo').innerHTML = 'Text changed!'">
+        Change Text
+    </button>
 </body>
 </html>

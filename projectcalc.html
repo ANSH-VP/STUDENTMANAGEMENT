@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<title><center>Calculator</center></title>-->
+</head>
+<style>
+
+    .calculator button{
+        width: 50px;
+        height: 50px;
+        font-size: 12px;
+        border-color:aqua
+    }
+    .number{
+        color:rgb(0, 238, 255);
+        background-color:white;
+    }
+    .calculate{
+        color:green;
+        background-color:white;
+    }
+    body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.calculator {
+    width: 30%;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(77, 106, 200);
+    box-sizing: border-box;
+}
+    .clear{
+        color:rgb(203, 237, 102);
+        background-color:white;
+    }
+    .anoclear{
+        color:rgb(255, 0, 0);
+        background-color:white;
+    }
+    .operator{
+        color:rgb(82, 82, 176);
+        background-color:white;
+    }
+
+</style>
+<body>
+    
+    <div class="calculator">
+        <input type="text" style="width: 80%; height: 30px; font-size: 12px; text-align: right; margin-bottom: 10px;" id="display" value="0"/>
+        <div class="button">
+            <button type ="submit" class="clear" onclick="cleardisplay()">Clear</button>
+            <button type="submit" class="anoclear" onclick="deletelast()">Delete</button>
+            <button type="submit" class="operator" onclick="appendvalue('%')">%</button>
+            <button type="submit" class="operator" onclick="appendvalue('/')">/</button><br>
+
+            <button type ="submit" class="number" onclick="appendvalue('7')">7</button>
+            <button type ="submit" class="number" onclick="appendvalue('8')">8</button>
+            <button type ="submit" class="number" onclick="appendvalue('9')">9</button>
+            <button type ="submit" class="operator" onclick="appendvalue('*')">x</button><br>
+
+            <button type ="submit" class="number"  onclick="appendvalue('4')">4</button>
+            <button type ="submit" class="number"  onclick="appendvalue('5')">5</button>
+            <button type ="submit" class="number"  onclick="appendvalue('6')">6</button>
+            <button type ="submit" class="operator" onclick="appendvalue('+')">+</button><br>
+
+            <button type ="submit" class="number"  onclick="appendvalue('1')">1</button>
+            <button type ="submit" class="number"  onclick="appendvalue('2')">2</button>
+            <button type ="submit" class="number"  onclick="appendvalue('3')">3</button>
+            <button type ="submit" class="operator" onclick="appendvalue('-')">-</button><br>
+
+            <button type ="submit" class="number"  onclick="appendvalue('0')">0</button>
+            <button type ="submit" class="number"  onclick="appendvalue('.')">.</button>
+            <button type ="submit" class="calculate" onclick="calculate()">=</button>
+        </div>
+    </div>
+    <script>
+        const display = document.getElementById('display');
+        function cleardisplay(){
+            display.value="0";
+        }
+        function deletelast(){
+            if(display.value.length===1){
+                display.value="0";
+            }
+            else{
+                display.value=display.value.slice(0,-1);
+            }
+        }
+        function appendvalue(value){
+            if(display.value==="0" && !isNaN(value)){
+                display.value=value;
+            }
+            else{
+                display.value+=value;
+            }
+        }
+        function calculate(){
+            try{
+                display.value=eval(display.value);
+            }
+            catch(e){
+                display.value="Error";
+            }
+        }
+    </script>
+</body>
+</html>

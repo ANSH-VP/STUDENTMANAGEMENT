@@ -3,57 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--<title><center>Calculator</center></title>-->
+    <title><center>Calculator</center></title>
 </head>
 <style>
 
-    .calculator button{
-        width: 50px;
-        height: 50px;
-        font-size: 12px;
-        border-color:aqua
-    }
-    .number{
-        color:rgb(0, 238, 255);
-        background-color:white;
-    }
-    .calculate{
-        color:green;
-        background-color:white;
-    }
     body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-}
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #06081b;
+    }
+    .calculator {
+        width: 300px;
+        padding: 20px;
+        background-color: #010102;
+        border-radius: 15px;
+    }
+    #display {
+        width: 100%;
+        height: 55px;
+        box-sizing: border-box;
+        margin-bottom: 15px;
+        font-size: 25px;
+        text-align: right;
+        border-radius: 8px;
+        background-color: white;
+    }
+    .button {
+        text-align: center;
+    }
 
-.calculator {
-    width: 30%;
-    text-align: center;
-    padding: 20px;
-    background-color: rgb(77, 106, 200);
-    box-sizing: border-box;
-}
-    .clear{
-        color:rgb(203, 237, 102);
-        background-color:white;
-    }
-    .anoclear{
-        color:rgb(255, 0, 0);
-        background-color:white;
-    }
-    .operator{
-        color:rgb(82, 82, 176);
-        background-color:white;
+    button {
+        width: 60px;
+        height: 50px;
+        margin: 4px;
+        border-radius: 8px;
+        border:none;
+        font-size: 18px;
+        background-color: #1d1c1c;
+        color: rgb(252, 252, 252);
     }
 
+    button:hover {
+        background-color: #978f8f;
+    }
+
+    .operator {
+        background-color: #b8ad1a;
+    }
+
+    .clear {
+        background-color: #c24435;
+    }
+
+    .anoclear {
+        background-color: #392fca;
+    }
+
+    .calculate {
+        background-color: #25bd64;
+        width: 130px;
+    }
 </style>
 <body>
     
     <div class="calculator">
-        <input type="text" style="width: 80%; height: 30px; font-size: 12px; text-align: right; margin-bottom: 10px;" id="display" value="0"/>
+        <input id="display" value="0"/><!--30679-->
         <div class="button">
             <button type ="submit" class="clear" onclick="cleardisplay()">Clear</button>
             <button type="submit" class="anoclear" onclick="deletelast()">Delete</button>

@@ -8,9 +8,10 @@
             background-color: azure;
             width:30%;
             height:40vh;
-            /*padding: 40px;
-            margin: 60px;*/
-            
+        }
+        .error{
+            text-align: center;
+            color:rgb(212, 28, 28);
         }
         button{
             height:3vh;
@@ -22,7 +23,7 @@
         align-items: center;
         min-height: 100vh;
         margin: 0;
-}
+        }
     </style>
     <body>
         <div id="box">
@@ -30,10 +31,10 @@
             <form class="login" onsubmit="return validateForm()">
                 <p><b>Email:</b></p>
                 <input type="text" id ="email"placeholder="Enter your username"/><br>
-                <span id="emailError"></span><br>
+                <span id="emailError" class="error"></span><br>
                 <p><b>Password:</b></p>
                 <input type="password" id="pass" placeholder="Enter your password"/><br>
-                <span id="passError"></span><br><br>
+                <span id="passError" class="error"></span><br><br>
                 <center><button type="Sumbit" onclick="">Login</button></center>
             </form>
         </div>
@@ -47,7 +48,11 @@
                 emailError.innerHTML="please enter email id";
                 valid=false;
             }
-            else if(!email.includes("@")){
+            else if(!email.includes("@gmail.com")){
+                emailError.innerHTML="please enter a valid Email id";
+                valid=false;
+            }
+            else if(!email.includes("@email.com")){
                 emailError.innerHTML="please enter a valid Email id";
                 valid=false;
             }

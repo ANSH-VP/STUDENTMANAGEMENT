@@ -71,30 +71,25 @@
 
 </style>
 <body>
-    
     <div class="calculator">
-        <input id="display" value="0"/><!--30679-->
+        <input id="display" value="0"/>
         <div class="button">
-            <button type ="submit" class="clear" onclick="cleardisplay()">Clear</button>
             <button type="submit" class="anoclear" onclick="deletelast()">Delete</button>
+            <button type ="submit" class="clear" onclick="cleardisplay()">Clear</button>
             <button type="submit" class="operator" onclick="appendvalue('%')">%</button>
             <button type="submit" class="operator" onclick="appendvalue('/')">/</button><br>
-
             <button type ="submit" class="number" onclick="appendvalue('7')">7</button>
             <button type ="submit" class="number" onclick="appendvalue('8')">8</button>
             <button type ="submit" class="number" onclick="appendvalue('9')">9</button>
             <button type ="submit" class="operator" onclick="appendvalue('*')">x</button><br>
-
             <button type ="submit" class="number"  onclick="appendvalue('4')">4</button>
             <button type ="submit" class="number"  onclick="appendvalue('5')">5</button>
             <button type ="submit" class="number"  onclick="appendvalue('6')">6</button>
             <button type ="submit" class="operator" onclick="appendvalue('+')">+</button><br>
-
             <button type ="submit" class="number"  onclick="appendvalue('1')">1</button>
             <button type ="submit" class="number"  onclick="appendvalue('2')">2</button>
             <button type ="submit" class="number"  onclick="appendvalue('3')">3</button>
             <button type ="submit" class="operator" onclick="appendvalue('-')">-</button><br>
-
             <button type ="submit" class="number"  onclick="appendvalue('0')">0</button>
             <button type ="submit" class="number"  onclick="appendvalue('.')">.</button>
             <button type ="submit" class="calculate" onclick="calculate()">=</button>

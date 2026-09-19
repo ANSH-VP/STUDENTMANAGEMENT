@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Admission Form</title>
+
+    <style>
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #Grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            border: solid black;
+            width: 500px;
+            text-align: center;
+        }
+
+        .A {
+            grid-column: span 2;
+            background-color: aqua;
+            color: black;
+        }
+
+        .section {
+            grid-column: span 2;
+            background-color: rgb(96, 94, 218);
+            color: black;
+            padding: 5px;
+        }
+
+        .field {
+            grid-column: span 2;
+            display: grid;
+            grid-template-columns: 150px 250px;
+            padding: 8px;
+            justify-content: center;
+            background-color: azure;
+        }
+
+        textarea {
+            height: 60px;
+        }
+
+        .button {
+            grid-column: span 2;
+            padding: 15px;
+            background-color: rgb(152, 192, 179);
+        }
+
+        button {
+            padding: 8px 30px;
+            background-color: aquamarine;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <form id="Grid">
+
+        <div class="A">
+            <h1>Student Admission Form</h1>
+        </div>
+
+        <div class="section">
+            <h3>Personal Information</h3>
+        </div>
+
+        <div class="field">
+            <label>Name :</label>
+            <input type="text" placeholder="Enter your name">
+        </div>
+
+        <div class="field">
+            <label>Father's Name :</label>
+            <input type="text" placeholder="Enter father's name">
+        </div>
+
+        <div class="field">
+            <label>Mother's Name :</label>
+            <input type="text" placeholder="Enter mother's name">
+        </div>
+
+        <div class="field">
+            <label>Date of Birth :</label>
+            <input type="date"/>
+        </div>
+
+        <div class="field">
+            <label>Gender :</label>
+            <select>
+                <option>Select Gender</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+            </select>
+        </div>
+
+        <div class="section">
+            <h3>Academic Information</h3>
+        </div>
+
+        <div class="field">
+            <label>Previous School :</label>
+            <input type="text" placeholder="Enter school name">
+        </div>
+
+        <div class="field">
+            <label>Qualification :</label>
+            <input type="text" placeholder="Enter qualification">
+        </div>
+
+        <div class="field">
+            <label>Percentage :</label>
+            <input type="number" placeholder="Enter percentage">
+        </div>
+
+        <div class="field">
+            <label>Course :</label>
+            <select>
+                <option>Select Course</option>
+                <option>B.Tech</option>
+                <option>B.Sc</option>
+                <option>B.Com</option>
+                <option>BBA</option>
+                <option>BA</option>
+            </select>
+        </div>
+
+        <div class="section">
+            <h3>Contact Information</h3>
+        </div>
+
+        <div class="field">
+            <label>Email :</label>
+            <input type="email" placeholder="Enter email">
+        </div>
+
+        <div class="field">
+            <label>Phone :</label>
+            <input type="tel" placeholder="Enter phone number">
+        </div>
+
+        <div class="field">
+            <label>Address :</label>
+            <textarea placeholder="Enter your address"></textarea>
+        </div>
+        <div class="section">
+            <h3>Admission Details</h3>
+        </div>
+
+        <div class="field">
+            <label>Admission Type :</label>
+            <select>
+                <option>Select Type</option>
+                <option>Regular</option>
+                <option>Management</option>
+                <option>Scholarship</option>
+            </select>
+        </div>
+
+        <div class="field">
+            <label>Hostel Required :</label>
+            <select>
+                <option>Select</option>
+                <option>Yes</option>
+                <option>No</option>
+            </select>
+        </div>
+
+        <div class="button">
+            <button type="submit">Submit Application</button>
+        </div>
+
+    </form>
+
+</body>
+
+</html>

@@ -5,17 +5,28 @@
     </head>
     <style>
         #box{
+            padding-inline: 3%;
+            padding-block:3%;
+            border:20px solid aquamarine;
             background-color: azure;
             width:30%;
             height:40vh;
+            border-radius: 8px;
         }
-        .error{
+        .error{ 
             text-align: center;
             color:rgb(212, 28, 28);
+            position:relative;
+            right:30px;
         }
         button{
-            height:3vh;
+            height:4vh;
             width:30%;
+        }
+        h1{
+            margin-top: 0;
+            position:relative;
+            top: -20px;
         }
         body {
         display: flex;
@@ -24,6 +35,8 @@
         min-height: 100vh;
         margin: 0;
         }
+
+
     </style>
     <body>
         <div id="box">
@@ -32,10 +45,10 @@
                 <p><b>Email:</b></p>
                 <input type="text" id ="email"placeholder="Enter your username"/><br>
                 <span id="emailError" class="error"></span><br>
-                <p><b>Password:</b></p>
+                <p><b>Password:</b></p> 
                 <input type="password" id="pass" placeholder="Enter your password"/><br>
-                <span id="passError" class="error"></span><br><br>
-                <center><button type="Sumbit" onclick="">Login</button></center>
+                <span id="passError" class="error"></span><br><br><br>`
+                <center><button type="Sumbit" onclick=""><b>Login</b></button></center>
             </form>
         </div>
         <SCRIPT>
@@ -48,11 +61,7 @@
                 emailError.innerHTML="please enter email id";
                 valid=false;
             }
-            else if(!email.includes("@gmail.com")){
-                emailError.innerHTML="please enter a valid Email id";
-                valid=false;
-            }
-            else if(!email.includes("@email.com")){
+            else if(!email.includes("@")){
                 emailError.innerHTML="please enter a valid Email id";
                 valid=false;
             }

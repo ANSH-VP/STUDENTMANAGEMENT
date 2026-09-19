@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Run Tracker</title>
+
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #f4f4f4;
+            text-align: center;
+        }
+        h1 {
+            margin: 20px;
+        }
+
+        #map {
+            width: 90%;
+            height: 500px;
+            margin: auto;
+            border-radius: 15px;
+        }
+
+        .info {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin: 20px;
+        }
+
+        .box {
+            background: white;
+            padding: 15px 30px;
+            border-radius: 10px;
+        }
+
+        .value {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        button {
+            padding: 12px 25px;
+            margin: 10px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #start {
+            background: green;
+            color: white;
+        }
+
+        #stop {
+            background: red;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>🏃 Run Tracker</h1>
+
+    <div id="map"></div>
+
+    <div class="info">
+
+        <div class="box">
+            <div>Distance</div>
+            <div class="value">
+                <span id="distance">0.00</span> km
+            </div>
+        </div>
+
+        <div class="box">
+            <div>Time</div>
+            <div class="value">
+                <span id="time">00:00</span>
+            </div>
+        </div>
+
+    </div>
+
+    <button id="start" onclick="startRun()">
+        ▶ Start Run
+    </button>
+
+    <button id="stop" onclick="stopRun()">
+        ⏹ Stop Run
+    </button>
+
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- Our JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
